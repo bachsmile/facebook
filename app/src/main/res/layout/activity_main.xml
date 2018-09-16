@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ImageView
+        android:id="@+id/imv_fb"
+        android:background="@drawable/facebook"
+        android:layout_marginLeft="@dimen/edit_magin_left"
+        android:layout_marginRight="@dimen/edit_magin_right"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="@dimen/edit_agin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:padding="@dimen/text_padding"
+        android:background="@drawable/duongvien"
+        android:textColor="@color/black"
+        android:hint="@string/hint_email_phone"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:layout_below="@+id/imv_fb"
+        android:layout_marginLeft="@dimen/edit_magin_left"
+        android:layout_marginRight="@dimen/edit_magin_right"
+        android:layout_marginTop="@dimen/edit_magin_top"
+        android:layout_marginBottom="@dimen/edit_agin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edt_pass"
+        android:padding="@dimen/text_padding"
+        android:background="@drawable/duongvien"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:hint="@string/hint_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_email"
+        android:layout_marginLeft="@dimen/edit_magin_left"
+        android:layout_marginRight="@dimen/edit_magin_right"
+        android:layout_marginTop="@dimen/edit_magin_top"
+        android:layout_marginBottom="@dimen/edit_agin_bottom"
+        />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:background="@drawable/duongvienbuttom"
+        android:textColor="@color/white"
+        android:text="@string/text_login"
+        android:textAllCaps="false"
+        android:textSize="@dimen/texr_size_large"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_pass"
+        android:layout_marginLeft="@dimen/edit_magin_left"
+        android:layout_marginRight="@dimen/edit_magin_right"
+        android:layout_marginTop="@dimen/edit_magin_top" />
+
+    <TextView
+        android:id="@+id/btn_sign_up"
+        android:gravity="center"
+        android:padding="@dimen/text_padding"
+        android:text="@string/text_sign_up"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/edit_magin_left"
+        android:layout_marginRight="@dimen/edit_magin_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:background="@drawable/duongvienbuttom"
+        app:srcCompat="@drawable/question"
+        android:layout_width="35dp"
+        android:layout_height="29dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn_sign_up"
+        android:layout_marginEnd="38dp" />
+</RelativeLayout>
